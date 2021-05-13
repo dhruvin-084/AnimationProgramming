@@ -1,6 +1,6 @@
 #pragma once
 
-#include<math.h>
+#include<cmath>
 
 #define VEC3_EPSILON 0.000001f
 
