@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Src\Application.h" />
+    <ClInclude Include="Src\vec3.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\glad.c" />
