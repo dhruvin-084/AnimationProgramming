@@ -31,7 +31,7 @@ inline float dot(const vec3& l, const vec3& r);
 // Non Component Wise operations
 inline float lenSq(const vec3& v);
 inline float len(const vec3& v);
-inline void normailze(vec3& v);
+inline void normalize(vec3& v);
 inline vec3 normalized(const vec3& v);
 inline float angle(const vec3& l, const vec3& r);
 inline vec3 project(const vec3& a, const vec3& b);

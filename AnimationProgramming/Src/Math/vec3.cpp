@@ -30,7 +30,7 @@ inline float len(const vec3& v) {
 
 	return sqrtf(lenSq);
 }
-inline void normailze(vec3& v) {
+inline void normalize(vec3& v) {
 	float lenSq = v.x * v.x + v.y * v.y + v.z * v.z;
 	if (lenSq < VEC3_EPSILON)
 		return;
