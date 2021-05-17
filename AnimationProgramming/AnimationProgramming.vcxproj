@@ -152,28 +152,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Src\Application.h" />
-    <ClInclude Include="Src\mat4.h" />
-<<<<<<< HEAD
-=======
     <ClInclude Include="Src\Math\mat4.h" />
     <ClInclude Include="Src\Math\quat.h" />
     <ClInclude Include="Src\Math\vec2.h" />
     <ClInclude Include="Src\Math\vec3.h" />
     <ClInclude Include="Src\Math\vec4.h" />
->>>>>>> Quaternion
-    <ClInclude Include="Src\vec2.h" />
-    <ClInclude Include="Src\vec3.h" />
-    <ClInclude Include="Src\vec4.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\glad.c" />
-    <ClCompile Include="Src\mat4.cpp" />
-<<<<<<< HEAD
-=======
     <ClCompile Include="Src\Math\mat4.cpp" />
     <ClCompile Include="Src\Math\quat.cpp" />
     <ClCompile Include="Src\Math\vec3.cpp" />
->>>>>>> Quaternion
     <ClCompile Include="Src\WinMain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

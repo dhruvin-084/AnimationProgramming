@@ -18,20 +18,6 @@
     <ClInclude Include="Src\Application.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Src\vec3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Src\vec2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Src\vec4.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Src\mat4.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-<<<<<<< HEAD
-=======
     <ClInclude Include="Src\Math\mat4.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -47,7 +33,6 @@
     <ClInclude Include="Src\Math\quat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
->>>>>>> Quaternion
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\glad.c">
@@ -56,11 +41,6 @@
     <ClCompile Include="Src\WinMain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Src\mat4.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-<<<<<<< HEAD
-=======
     <ClCompile Include="Src\Math\mat4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -70,6 +50,5 @@
     <ClCompile Include="Src\Math\quat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
->>>>>>> Quaternion
   </ItemGroup>
 </Project>
