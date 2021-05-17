@@ -185,7 +185,7 @@ inline mat4 lookAt(const vec3& position, const vec3& target, const vec3& up) {
 	vec3 r = cross(up, f);
 	if (r == vec3(0.0f, 0.0f, 0.0f))
 		return mat4();
-	normailze(r);
+	normalize(r);
 
 	vec3 u = normalized(cross(f, r));
 	vec3 t = vec3(
