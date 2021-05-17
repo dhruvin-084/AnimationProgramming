@@ -39,6 +39,7 @@ quat operator-(const quat& a);
 quat operator*(const quat& a, float f);
 quat operator*(const quat& Q1, const quat& Q2);
 vec3 operator*(const quat& q, const vec3& v);
+quat operator^(const quat& q, float f); // Power
 
 // Comarison operators
 bool operator==(const quat& a, const quat& b);
@@ -54,3 +55,14 @@ quat normalized(const quat& a);
 
 quat conjugate(const quat& a);
 quat inverse(const quat& a);
+
+
+// Interpolation functions
+quat mix(const quat& from, const quat& to, float t);
+quat nlerp(const quat& from, const quat& to, float t);
+quat slerp(const quat& from, const quat& to, float t);
+
+quat lookRotation(const vec3& direction, const vec3& up);
+
+mat4 quatToMat4(const quat& q);
+quat mat4ToQuat(const mat4& m);
