@@ -161,7 +161,9 @@
     <ClInclude Include="Src\Renderer\Draw.h" />
     <ClInclude Include="Src\Renderer\IndexBuffer.h" />
     <ClInclude Include="Src\Renderer\Shader.h" />
+    <ClInclude Include="Src\Renderer\Texture.h" />
     <ClInclude Include="Src\Renderer\Uniform.h" />
+    <ClInclude Include="Src\stb_image.h" />
     <ClInclude Include="Src\Transform.h" />
   </ItemGroup>
   <ItemGroup>
@@ -173,7 +175,9 @@
     <ClCompile Include="Src\Renderer\Draw.cpp" />
     <ClCompile Include="Src\Renderer\IndexBuffer.cpp" />
     <ClCompile Include="Src\Renderer\Shader.cpp" />
+    <ClInclude Include="Src\Renderer\Texture.cpp" />
     <ClCompile Include="Src\Renderer\Uniform.cpp" />
+    <ClCompile Include="Src\stb_image.cpp" />
     <ClCompile Include="Src\Transform.cpp" />
     <ClCompile Include="Src\WinMain.cpp" />
   </ItemGroup>
