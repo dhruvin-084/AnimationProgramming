@@ -158,7 +158,9 @@
     <ClInclude Include="Src\Math\vec3.h" />
     <ClInclude Include="Src\Math\vec4.h" />
     <ClInclude Include="Src\Renderer\Attribute.h" />
+    <ClInclude Include="Src\Renderer\IndexBuffer.h" />
     <ClInclude Include="Src\Renderer\Shader.h" />
+    <ClInclude Include="Src\Renderer\Uniform.h" />
     <ClInclude Include="Src\Transform.h" />
   </ItemGroup>
   <ItemGroup>
@@ -167,7 +169,9 @@
     <ClCompile Include="Src\Math\quat.cpp" />
     <ClCompile Include="Src\Math\vec3.cpp" />
     <ClCompile Include="Src\Renderer\Attribute.cpp" />
+    <ClCompile Include="Src\Renderer\IndexBuffer.cpp" />
     <ClCompile Include="Src\Renderer\Shader.cpp" />
+    <ClCompile Include="Src\Renderer\Uniform.cpp" />
     <ClCompile Include="Src\Transform.cpp" />
     <ClCompile Include="Src\WinMain.cpp" />
   </ItemGroup>

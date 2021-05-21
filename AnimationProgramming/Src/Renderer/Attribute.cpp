@@ -40,7 +40,12 @@ void Attribute<T>::Set(T* inputArray, unsigned int arraySize)
 template<typename T>
 void Attribute<T>::Set(std::vector<T>& input)
 {
-	Set(&input[0], (unsigned int)input.size);
+	mCount = (unsigned int)input.size();
+	unsigned int size = sizeof(T);
+
+	glBindBuffer(GL_ARRAY_BUFFER, mHandle);
+	glBufferData(GL_ARRAY_BUFFER, size * mCount, input.data(), GL_STREAM_DRAW);
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
 }
 
 template<>
@@ -62,6 +67,10 @@ void Attribute<vec3>::SetAttribPointer(unsigned int s) {
 template<>
 void Attribute<vec4>::SetAttribPointer(unsigned int s) {
 	glVertexAttribPointer(s, 4, GL_FLOAT, GL_FALSE, 0, 0);
+}
+template<>
+void Attribute<ivec4>::SetAttribPointer(unsigned int s) {
+	glVertexAttribPointer(s, 4, GL_INT, GL_FALSE, 0, 0);
 }
 
 template<typename T>

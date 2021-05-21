@@ -207,7 +207,7 @@ void Shader::PopulateUniforms()
 				unsigned int uniformIndex = 0;
 				while (true) {
 					memset(testName, 0, sizeof(testName));
-					sprintf(testName, "%s[%d]", uniformName.c_str(), uniformIndex++);
+					sprintf_s(testName, "%s[%d]", uniformName.c_str(), uniformIndex++);
 
 					int uniformLocation = glGetUniformLocation(mHandle, testName);
 					if (uniformLocation < 0)

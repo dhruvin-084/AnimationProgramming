@@ -66,37 +66,36 @@ struct mat4 {
 
 
 // Comarison operators
-inline bool operator==(const mat4& a, const mat4& b);
-inline bool operator!=(const mat4& a, const mat4& b);
+bool operator==(const mat4& a, const mat4& b);
+bool operator!=(const mat4& a, const mat4& b);
 
 // Addition
-inline mat4 operator+(const mat4& a, const mat4& b);
+mat4 operator+(const mat4& a, const mat4& b);
 // Multiplicaton with scaler
-inline mat4 operator*(const mat4& a, float f);
+mat4 operator*(const mat4& a, float f);
 
 // Multiplication with matrix
-inline mat4 operator*(const mat4& a, const mat4& b);
+mat4 operator*(const mat4& a, const mat4& b);
 
 // Multiplication with vector
-inline vec4 operator*(const mat4& m, const vec4& v);
 
 // Transform the vec3 using mat4
-inline vec3 transformVector(const mat4& m, const vec3& v);
-inline vec3 transformPoint(const mat4& m, const vec3& v);
-inline vec3 transformPoint(const mat4& m, const vec3& v, float& w);
+vec3 transformVector(const mat4& m, const vec3& v);
+vec3 transformPoint(const mat4& m, const vec3& v);
+vec3 transformPoint(const mat4& m, const vec3& v, float& w);
 
 // Transpose of mat4
-inline void transpose(mat4& m);
-inline mat4 transposed(const mat4& m);
+void transpose(mat4& m);
+mat4 transposed(const mat4& m);
 
 // Find inverse and determinant of mat4
-inline float diterminant(const mat4& m);
-inline mat4 adjugate(const mat4& m);
-inline mat4 inverse(const mat4& m);
-inline void invert(mat4& m);
+float diterminant(const mat4& m);
+mat4 adjugate(const mat4& m);
+mat4 inverse(const mat4& m);
+void invert(mat4& m);
 
 // Camera stuff
-inline mat4 frustum(float l, float r, float b, float t, float n, float f);
-inline mat4 perspective(float fov, float aspect, float n, float f);
-inline mat4 ortho(float l, float r, float b, float t, float n, float f);
-inline mat4 lookAt(const vec3& position, const vec3& target, const vec3& up);
+mat4 frustum(float l, float r, float b, float t, float n, float f);
+mat4 perspective(float fov, float aspect, float n, float f);
+mat4 ortho(float l, float r, float b, float t, float n, float f);
+mat4 lookAt(const vec3& position, const vec3& target, const vec3& up);
