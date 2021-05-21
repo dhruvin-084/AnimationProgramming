@@ -150,10 +150,6 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine
 		std::cout << "WGL_EXT_swap_control is not supported\n";
 	}
 
-	
-	unsigned int VAO;
-	glGenVertexArrays(1, &VAO);
-	glBindVertexArray(VAO);
 
 	// Show window and initialize app
 	ShowWindow(hwnd, SW_SHOW);
@@ -188,13 +184,17 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine
 			glEnable(GL_DEPTH_TEST);
 			glEnable(GL_CULL_FACE);
 			glPointSize(0.5f);
-			glBindVertexArray(VAO);
 
 			glClearColor(0.5f, 0.6f, 0.7f, 1.0f);
 			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 
 			float aspect = (float)clientWidth / (float)clientHeight;
 			app->Render(aspect);
+
+			GLenum err;
+			while (err = glGetError() != GL_NO_ERROR) {
+				std::cout << "err: " << std::hex << err << "\n";
+			}
 
 			SwapBuffers(hdc);
 			if (vsynch != 0)

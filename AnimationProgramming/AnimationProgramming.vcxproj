@@ -158,6 +158,7 @@
     <ClInclude Include="Src\Math\vec3.h" />
     <ClInclude Include="Src\Math\vec4.h" />
     <ClInclude Include="Src\Renderer\Attribute.h" />
+    <ClInclude Include="Src\Renderer\Draw.h" />
     <ClInclude Include="Src\Renderer\IndexBuffer.h" />
     <ClInclude Include="Src\Renderer\Shader.h" />
     <ClInclude Include="Src\Renderer\Uniform.h" />
@@ -169,11 +170,16 @@
     <ClCompile Include="Src\Math\quat.cpp" />
     <ClCompile Include="Src\Math\vec3.cpp" />
     <ClCompile Include="Src\Renderer\Attribute.cpp" />
+    <ClCompile Include="Src\Renderer\Draw.cpp" />
     <ClCompile Include="Src\Renderer\IndexBuffer.cpp" />
     <ClCompile Include="Src\Renderer\Shader.cpp" />
     <ClCompile Include="Src\Renderer\Uniform.cpp" />
     <ClCompile Include="Src\Transform.cpp" />
     <ClCompile Include="Src\WinMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\Shaders\FragmentShader.glsl" />
+    <None Include="Res\Shaders\VertexShader.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

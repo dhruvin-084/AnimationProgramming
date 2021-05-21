@@ -1,5 +1,7 @@
 #pragma once
 
+#include"Renderer/Shader.h"
+#include"Renderer/Draw.h"
 
 class Application {
 public:

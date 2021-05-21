@@ -33,10 +33,14 @@ void Shader::Load(const std::string& vertexPath, const std::string& fragmentPath
 	std::string v_source;
 	if (vertFile)
 		v_source = ReadFile(vertexPath);
+	else
+		std::cout << vertexPath << " File not avaliable\n";
 
 	std::string f_sourse;
 	if (fragFile)
 		f_sourse = ReadFile(fragmentPath);
+	else
+		std::cout << fragmentPath << " File not avaliable\n";
 
 	unsigned int vert = ComplieVertexShader(v_source);
 	unsigned int frag = ComplieFragmentShader(f_sourse);
